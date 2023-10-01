@@ -1,0 +1,14 @@
+<div ...attributes>
+  <label for="locale-select" class="form-label">Locale</label>
+  <select
+    {{on "change" this.updateLocale}}
+    class="form-select"
+    id="locale-select"
+  >
+    {{#each-in this.supportedLocales as |value label|}}
+      <option value={{value}} selected={{eq value this.intl.primaryLocale}}>
+        {{label}}
+      </option>
+    {{/each-in}}
+  </select>
+</div>

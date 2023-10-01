@@ -1,0 +1,6 @@
+login:
+  email:
+    label: "E-Mail"
+  password:
+    label: "Passwort"
+  submit: "Anmelden"
