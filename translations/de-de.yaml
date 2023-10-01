@@ -4,3 +4,7 @@ login:
   password:
     label: "Passwort"
   submit: "Anmelden"
+
+validation:
+  tooShort: "Muss mindestens {min} Zeichen haben"
+  valueMissing: "Darf nicht leer sein"

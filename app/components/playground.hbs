@@ -5,7 +5,7 @@
     @property="email"
     as |el|
   >
-    <el.control required />
+    <el.control required {{validate}} />
   </form.element>
   <form.element
     @controlType="password"
@@ -13,8 +13,9 @@
     @property="password"
     as |el|
   >
-    <el.control required />
+    <el.control minlength="10" required {{validate}} />
   </form.element>
+  <form.element @controlType="time" />
   <form.submitButton>
     {{t "login.submit"}}
   </form.submitButton>

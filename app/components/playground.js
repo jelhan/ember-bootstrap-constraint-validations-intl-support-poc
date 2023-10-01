@@ -11,7 +11,10 @@ export default class PlaygroundComponent extends Component {
   data = new FormData();
 
   @action
-  submit() {
+  submit(event) {
+    debugger;
+    event.preventDefault();
+
     window.alert('Form submitted');
   }
 }

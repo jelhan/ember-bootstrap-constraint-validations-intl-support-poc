@@ -5,3 +5,6 @@ login:
     label: "Password"
   submit: "Login"
 
+validation:
+  tooShort: "Must have at least {min} chars"
+  valueMissing: "Must not be empty"
